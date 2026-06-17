@@ -1,0 +1,115 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap');
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Global variables and themes */
+@layer base {
+  body {
+    @apply bg-slate-50 text-black transition-colors duration-200 antialiased font-sans;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  body.dark {
+    @apply bg-slate-950 text-slate-100;
+  }
+}
+
+/* Custom Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+/* TCS iON Question Palette replicates the real exam shapes */
+/* Grey = Not Visited (Square with slightly rounded corners) */
+.palette-not-visited {
+  background: #ffffff;
+  color: #333333;
+  border: 1px solid #777777;
+  border-radius: 3px;
+  box-shadow: inset 0 -3px 0 0 #dddddd;
+}
+.dark .palette-not-visited {
+  background: #1e293b;
+  color: #cbd5e1;
+  border-color: #475569;
+  box-shadow: inset 0 -3px 0 0 #334155;
+}
+
+/* Red = Not Answered (Trapezoid/rounded-top style - we use rounded-top-lg) */
+.palette-not-answered {
+  background: #ff5722;
+  color: #ffffff !important;
+  border: 1px solid #ff5722;
+  border-radius: 10px 10px 0 0;
+  box-shadow: inset 0 -3px 0 0 #b33c17;
+}
+
+/* Green = Answered (Trapezoid/rounded-bottom style - we use rounded-bottom-lg) */
+.palette-answered {
+  background: #2e7d32;
+  color: #ffffff !important;
+  border: 1px solid #2e7d32;
+  border-radius: 0 0 10px 10px;
+  box-shadow: inset 0 -3px 0 0 #1b4d20;
+}
+
+/* Purple = Marked for Review (Circular badge) */
+.palette-marked-review {
+  background: #5e35b1;
+  color: #ffffff !important;
+  border: 1px solid #5e35b1;
+  border-radius: 50%;
+  box-shadow: inset 0 -3px 0 0 #3f1d85;
+}
+
+/* Blue = Answered & Marked for Review (Circular badge with a tiny green dot/checkmark) */
+.palette-answered-marked-review {
+  background: #5e35b1;
+  color: #ffffff !important;
+  border: 1px solid #5e35b1;
+  border-radius: 50%;
+  box-shadow: inset 0 -3px 0 0 #3f1d85;
+  position: relative;
+}
+.palette-answered-marked-review::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 12px;
+  height: 12px;
+  background-color: #2e7d32;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.dark .palette-answered-marked-review::after {
+  border-color: #1e293b;
+}
+
+/* Pulse animation for timer warnings */
+@keyframes warning-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.animate-warning-pulse {
+  animation: warning-pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
