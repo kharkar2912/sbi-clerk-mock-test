@@ -431,7 +431,7 @@ export default function AdminPanel() {
           </div>
 
           {/* Guidelines alert */}
-          <div className="bg-slate-55 dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-xs">
+          <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-800 text-xs">
             <span className="font-bold text-black dark:text-slate-200 block mb-2">CSV Import Guidelines</span>
             <div className="space-y-1.5 text-slate-800 dark:text-slate-400 leading-relaxed font-mono">
               Headers: <strong className="text-primary-600 dark:text-primary-400">question,optionA,optionB,optionC,optionD,correctAnswer,section,topic,difficulty,explanation</strong>
@@ -453,7 +453,7 @@ export default function AdminPanel() {
           )}
 
           {uploadStatus && (
-            <div className="flex items-center gap-2 bg-emerald-50 dark:bg-emerald-950/20 text-emerald-600 dark:text-emerald-450 p-3.5 rounded-lg border border-emerald-100 dark:border-emerald-950 text-xs font-semibold">
+            <div className="flex items-center gap-2 bg-emerald-50 dark:bg-emerald-950/20 text-emerald-600 dark:text-emerald-500 p-3.5 rounded-lg border border-emerald-100 dark:border-emerald-950 text-xs font-semibold">
               <CheckCircle className="w-4 h-4 flex-shrink-0" />
               <span>{uploadStatus}</span>
             </div>

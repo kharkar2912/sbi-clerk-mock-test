@@ -68,7 +68,7 @@ export default function Navbar({ currentView, setView }) {
 
             {/* Profile Dropdown / Card */}
             <div className="flex items-center gap-3 pl-4 border-l border-slate-200 dark:border-slate-800">
-              <div className="w-8 h-8 rounded-full bg-primary-100 dark:bg-primary-900/60 flex items-center justify-center text-primary-700 dark:text-primary-300 font-semibold border border-primary-200 dark:border-primary-850">
+              <div className="w-8 h-8 rounded-full bg-primary-100 dark:bg-primary-900/60 flex items-center justify-center text-primary-700 dark:text-primary-300 font-semibold border border-primary-200 dark:border-primary-800">
                 {currentUser.displayName ? currentUser.displayName.charAt(0) : <User className="w-4 h-4" />}
               </div>
               <div className="flex flex-col text-left">

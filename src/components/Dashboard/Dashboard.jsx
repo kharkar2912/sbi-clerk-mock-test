@@ -154,7 +154,7 @@ export default function Dashboard({ setView, startTest }) {
               <div className="p-5 rounded-xl border border-primary-100 dark:border-primary-950/40 bg-gradient-to-br from-primary-50/50 to-white dark:from-primary-950/20 dark:to-slate-900 flex flex-col justify-between h-48 hover:shadow-md hover:border-primary-200 dark:hover:border-primary-900 transition-all">
                 <div>
                   <div className="flex justify-between items-center">
-                    <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 bg-primary-100 dark:bg-primary-900 text-primary-850 dark:text-primary-300 rounded">
+                    <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-300 rounded">
                       Full Simulation
                     </span>
                     <span className="text-xs text-slate-400 font-medium">120 Mins</span>

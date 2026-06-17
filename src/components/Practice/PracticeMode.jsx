@@ -91,7 +91,7 @@ export default function PracticeMode({ setView }) {
         
         {/* Header Title */}
         <div className="flex items-center gap-3 border-b border-slate-100 dark:border-slate-800 pb-4 mb-6">
-          <div className="p-2.5 bg-primary-50 dark:bg-primary-950/40 text-primary-600 dark:text-primary-450 rounded-xl">
+          <div className="p-2.5 bg-primary-50 dark:bg-primary-950/40 text-primary-600 dark:text-primary-500 rounded-xl">
             <Compass className="w-6 h-6" />
           </div>
           <div>

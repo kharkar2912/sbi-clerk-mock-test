@@ -63,7 +63,7 @@ export default function ResultPage({ result, onBack }) {
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
           
-          <div className="p-4 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-750 text-white shadow">
+          <div className="p-4 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-700 text-white shadow">
             <span className="text-[10px] uppercase font-bold tracking-wider text-primary-200 block">Final Score</span>
             <span className="text-3xl font-extrabold block mt-1.5">{result.score.toFixed(1)}</span>
             <span className="text-[10px] text-primary-100 mt-2 block">out of {totalQs} marks</span>
@@ -95,11 +95,11 @@ export default function ResultPage({ result, onBack }) {
 
         {/* Incorrect vs Correct Grid counts */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 border-t border-slate-100 dark:border-slate-800 pt-6 text-xs font-semibold">
-          <div className="flex items-center gap-2 p-2 rounded bg-emerald-50 dark:bg-emerald-950/20 text-emerald-700 dark:text-emerald-450 border border-emerald-100 dark:border-emerald-900/30">
+          <div className="flex items-center gap-2 p-2 rounded bg-emerald-50 dark:bg-emerald-950/20 text-emerald-700 dark:text-emerald-500 border border-emerald-100 dark:border-emerald-900/30">
             <CheckCircle className="w-5 h-5 flex-shrink-0" />
             <span>Correct Answers: {correct}</span>
           </div>
-          <div className="flex items-center gap-2 p-2 rounded bg-red-50 dark:bg-red-950/20 text-red-700 dark:text-red-450 border border-red-100 dark:border-red-900/30">
+          <div className="flex items-center gap-2 p-2 rounded bg-red-50 dark:bg-red-950/20 text-red-700 dark:text-red-500 border border-red-100 dark:border-red-900/30">
             <XCircle className="w-5 h-5 flex-shrink-0" />
             <span>Incorrect Answers: {incorrect}</span>
           </div>

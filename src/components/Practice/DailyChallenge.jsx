@@ -111,7 +111,7 @@ export default function DailyChallenge({ setView }) {
           
           <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm p-6 sm:p-8">
             <div className="flex items-center gap-3 border-b border-slate-200 dark:border-slate-800 pb-4 mb-6">
-              <div className="p-2.5 bg-orange-55 shadow-sm border border-orange-100 dark:border-orange-950/20 text-orange-600 dark:text-orange-400 rounded-xl">
+              <div className="p-2.5 bg-orange-50 shadow-sm border border-orange-100 dark:border-orange-950/20 text-orange-600 dark:text-orange-400 rounded-xl">
                 <Calendar className="w-6 h-6" />
               </div>
               <div>
@@ -140,7 +140,7 @@ export default function DailyChallenge({ setView }) {
                     <span>Completed Today</span>
                   </span>
                 ) : (
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-100 dark:bg-amber-950/40 text-amber-800 dark:text-amber-450 text-xs font-bold self-center">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-100 dark:bg-amber-950/40 text-amber-800 dark:text-amber-500 text-xs font-bold self-center">
                     <span>Pending for Today</span>
                   </span>
                 )}
@@ -168,7 +168,7 @@ export default function DailyChallenge({ setView }) {
                 className={`w-full flex items-center justify-center gap-2 py-3 px-4 border border-transparent rounded-xl text-sm font-bold text-white shadow-md active:scale-98 transition-all ${
                   completedToday 
                     ? "bg-slate-300 dark:bg-slate-800 cursor-not-allowed text-slate-700 shadow-none" 
-                    : "bg-orange-500 hover:bg-orange-655 shadow-orange-500/10"
+                    : "bg-orange-500 hover:bg-orange-600 shadow-orange-500/10"
                 }`}
               >
                 <Play className="w-4 h-4 fill-white" />

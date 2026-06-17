@@ -469,7 +469,7 @@ export default function ExamEngine({ testType, questionsList, onFinish, onCancel
           
           {/* Question Title Bar */}
           <div className="bg-slate-50 dark:bg-slate-900/60 border-b border-slate-100 dark:border-slate-800/80 px-6 py-3 flex justify-between items-center">
-            <span className="text-xs font-bold text-primary-800 dark:text-primary-450">
+            <span className="text-xs font-bold text-primary-800 dark:text-primary-500">
               Question No. {currentIdx + 1} of {totalQs}
             </span>
             <span className="text-[10px] font-semibold bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-400 px-2 py-0.5 rounded">
@@ -547,7 +547,7 @@ export default function ExamEngine({ testType, questionsList, onFinish, onCancel
               </button>
               <button
                 onClick={handleSaveNext}
-                className="px-5 py-2 bg-primary-650 hover:bg-primary-700 text-white text-xs font-semibold rounded shadow-sm border border-primary-700"
+                className="px-5 py-2 bg-primary-600 hover:bg-primary-700 text-white text-xs font-semibold rounded shadow-sm border border-primary-700"
               >
                 Save & Next
               </button>
@@ -568,7 +568,7 @@ export default function ExamEngine({ testType, questionsList, onFinish, onCancel
           
           {/* Candidate Profile Details Box */}
           <div className="bg-white dark:bg-slate-900 border-b border-[#cbdce6] dark:border-slate-800 p-4 flex items-center gap-3">
-            <div className="w-14 h-14 rounded bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-primary-700 dark:text-primary-350 text-lg font-bold shadow-inner">
+            <div className="w-14 h-14 rounded bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-primary-700 dark:text-primary-300 text-lg font-bold shadow-inner">
               {currentUser.displayName ? currentUser.displayName.charAt(0) : "C"}
             </div>
             <div className="flex flex-col text-left">
@@ -606,7 +606,7 @@ export default function ExamEngine({ testType, questionsList, onFinish, onCancel
           </div>
 
           {/* Question Grid header */}
-          <div className="bg-primary-700 text-white text-[11px] font-bold py-2 px-4 text-left border-y border-primary-850">
+          <div className="bg-primary-700 text-white text-[11px] font-bold py-2 px-4 text-left border-y border-primary-800">
             {activeSection} Questions Palette
           </div>
 
@@ -631,7 +631,7 @@ export default function ExamEngine({ testType, questionsList, onFinish, onCancel
                       key={idx}
                       onClick={() => navigateToQuestion(idx)}
                       className={`w-9 h-9 text-xs font-bold flex items-center justify-center transition-all ${styleClass} ${
-                        isCurrent ? "ring-2 ring-primary-500 ring-offset-1 dark:ring-offset-slate-900 scale-105" : ""
+                        isCurrent ? "ring-2 ring-primary-500 ring-offset-1 dark:ring-offset-slate-900 scale-100" : ""
                       }`}
                     >
                       {idx + 1}
@@ -646,7 +646,7 @@ export default function ExamEngine({ testType, questionsList, onFinish, onCancel
           <div className="p-4 bg-white dark:bg-slate-900 border-t border-[#cbdce6] dark:border-slate-800">
             <button
               onClick={onCancel}
-              className="w-full py-2 bg-red-50 hover:bg-red-150 border border-red-200 dark:border-red-950 dark:hover:bg-red-950/20 text-red-650 dark:text-red-400 font-semibold text-xs rounded transition-colors"
+              className="w-full py-2 bg-red-50 hover:bg-red-200 border border-red-200 dark:border-red-950 dark:hover:bg-red-950/20 text-red-600 dark:text-red-400 font-semibold text-xs rounded transition-colors"
             >
               Quit Exam Session
             </button>

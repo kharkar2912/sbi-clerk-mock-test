@@ -144,13 +144,13 @@ export default function AIImprovement({ setView }) {
               </div>
               <div className="p-4 border border-slate-200 dark:border-slate-800 rounded-xl">
                 <span className="text-[10px] text-slate-700 uppercase font-bold tracking-wide">Evaluation</span>
-                <span className="block text-lg font-bold text-emerald-600 dark:text-emerald-450 mt-1">Adaptive</span>
+                <span className="block text-lg font-bold text-emerald-600 dark:text-emerald-500 mt-1">Adaptive</span>
               </div>
             </div>
 
             <button
               onClick={handleStartImprovement}
-              className="w-full flex items-center justify-center gap-2 py-3 px-4 border border-transparent rounded-xl text-sm font-bold text-white bg-purple-650 hover:bg-purple-700 shadow-md shadow-purple-500/10 active:scale-98 transition-all"
+              className="w-full flex items-center justify-center gap-2 py-3 px-4 border border-transparent rounded-xl text-sm font-bold text-white bg-purple-600 hover:bg-purple-700 shadow-md shadow-purple-500/10 active:scale-98 transition-all"
             >
               <Play className="w-4 h-4 fill-white" />
               <span>Generate Adaptive Practice Set</span>
